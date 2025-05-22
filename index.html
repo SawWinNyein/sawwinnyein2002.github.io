@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="language-switcher">
+            <button id="btnEnglish">English</button>
+            <button id="btnMyanmar">မြန်မာ</button>
+            <button id="btnSgawKaren">စကောကရင်</button>
+            <button id="btnPwoKaren">ပိုးကရင်</button>
+        </div>
+        <h1 id="title">My Personal Website</h1>
+    </header>
+
+    <main>
+        <section class="personal-info">
+            <h2 id="personalInfoTitle">Personal Information</h2>
+            <div class="info-grid">
+                <div>
+                    <p><strong id="nameLabel">Name:</strong> <span id="name">John Doe</span></p>
+                    <p><strong id="ageLabel">Age:</strong> <span id="age">25</span></p>
+                    <p><strong id="interestsLabel">Interests:</strong> <span id="interests">Web Development, Photography, Travel</span></p>
+                </div>
+                <div>
+                    <p><strong id="colorLabel">Favorite Color:</strong> <span id="color">Blue</span></p>
+                    <p><strong id="sportLabel">Favorite Sport:</strong> <span id="sport">Basketball</span></p>
+                    <p><strong id="heightLabel">Height:</strong> <span id="height">175 cm</span></p>
+                    <p><strong id="weightLabel">Weight:</strong> <span id="weight">70 kg</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 id="skillsTitle">Skills</h2>
+            <div class="skill-bars">
+                <div class="skill">
+                    <span id="computerRepair">Computer Repair</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span id="microsoftOffice">Microsoft Office</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span id="photoshop">Photoshop</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span id="htmlSkill">HTML</span>
+                    <div class="bar-container">
+                        <div class="bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 id="projectsTitle">My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3 id="travelBlog">Travel Blog</h3>
+                    <p id="travelDesc">A blog documenting my travels around the world with photos and stories.</p>
+                </div>
+                <div class="card">
+                    <h3>PEDU Project</h3>
+                    <p id="peduDesc">An educational platform for learning new skills.</p>
+                </div>
+                <div class="card">
+                    <h3 id="computerTeaching">Computer Teaching</h3>
+                    <p id="teachingDesc">A project to teach computer skills to beginners.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2 id="contactTitle">Contact Me</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nameInput" id="nameInputLabel">Name:</label>
+                    <input type="text" id="nameInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput" id="emailLabel">Email:</label>
+                    <input type="email" id="emailInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="messageInput" id="messageLabel">Message:</label>
+                    <textarea id="messageInput" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submitBtn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyright">© 2023 My Personal Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
