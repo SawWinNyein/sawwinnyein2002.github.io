@@ -135,6 +135,46 @@ main {
 .form-group {
     margin-bottom: 1rem;
 }
+.profile-pic-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-pic-placeholder {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 10px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #777;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: none;
+  margin: 0 auto 10px;
+}
+
+.view-photo-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-photo-btn:hover {
+  background-color: #2980b9;
+}
 
 label {
     display: block;
