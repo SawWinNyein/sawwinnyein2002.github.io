@@ -35,6 +35,13 @@ const languages = {
         submitBtn: "Send Message",
         copyright: "© 2023 My Personal Website. All rights reserved."
     },
+    function changeLanguage(lang) {
+  const viewPhotoBtn = document.getElementById('viewPhotoBtn');
+  if (photo.style.display === 'none') {
+    if (lang === 'english') viewPhotoBtn.textContent = 'View Photo';
+    else if (lang === 'myanmar') viewPhotoBtn.textContent = 'ဓာတ်ပုံကြည့်ရန်';
+    else if (lang === 'sgawKaren') viewPhotoBtn.textContent = 'ဓာတ်ပုံကြည့်ရန် (စကော)';
+    else if (lang === 'pwoKaren') viewPhotoBtn.textContent = 'ဓာတ်ပုံကြည့်ရန် (ပိုး)
     myanmar: {
         title: "ကျွန်တော့်ကိုယ်ပိုင် ဝက်ဘ်ဆိုဒ်",
         personalInfoTitle: "ကိုယ်ရေးအချက်အလက်",
@@ -180,6 +187,20 @@ function changeLanguage(lang) {
     document.getElementById('submitBtn').textContent = content.submitBtn;
     document.getElementById('copyright').textContent = content.copyright;
 }
+document.getElementById('viewPhotoBtn').addEventListener('click', function() {
+  const photo = document.getElementById('profilePhoto');
+  const placeholder = document.getElementById('profilePicPlaceholder');
+  
+  if (photo.style.display === 'none') {
+    photo.style.display = 'block';
+    placeholder.style.display = 'none';
+    this.textContent = 'Hide Photo';
+  } else {
+    photo.style.display = 'none';
+    placeholder.style.display = 'flex';
+    this.textContent = 'View Photo';
+  }
+});
 
 // Event listeners for language buttons
 document.getElementById('btnEnglish').addEventListener('click', () => changeLanguage('english'));
